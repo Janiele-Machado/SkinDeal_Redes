@@ -59,6 +59,7 @@ Durante os testes, foi possível verificar que o DNS interno do Docker estava fu
 ```bash
 docker exec -it nginx_proxy_manager_skindeal getent hosts apache
 ```
+<img width="1628" height="75" alt="Captura de tela 2026-06-01 161621" src="https://github.com/user-attachments/assets/8dbfeb35-abc4-4cb7-b73c-ecdd41e47923" />
 
 O resultado retornou o endereço IP interno associado ao container Apache, comprovando que o nome do serviço estava sendo resolvido corretamente pela rede Docker.
 
@@ -74,7 +75,7 @@ Foi implementado através de volumes Docker para garantir a persistência dos ar
 ## Topologia da Rede
 
 ```text
-Usuário
+ Usuário
     |
     v
 Nginx Proxy Manager
@@ -177,6 +178,7 @@ docker compose up -d --build
 ```bash
 docker ps
 ```
+<img width="1711" height="357" alt="Captura de tela 2026-06-01 162649" src="https://github.com/user-attachments/assets/a8d24b00-dc40-41cb-a400-b3914c5ee7bb" />
 
 ---
 
@@ -204,4 +206,4 @@ http://localhost:8051
 
 ## Autores
 
-Projeto desenvolvido para fins acadêmicos nas disciplinas de Programação Web, Gerência de Projetos e Serviços de Redes pelos estudantes: Janiele de Farias Machado, Arthur ARTHUR Henrique Dias do Couto, Heitor Messias Gomes, Kaiky Leite Malaquias e Samuel Kushi de Paiva.
+Projeto desenvolvido para fins acadêmicos nas disciplinas de Programação Web, Gerência de Projetos e Serviços de Redes pelos estudantes: Janiele de Farias Machado, Arthur Henrique Dias do Couto, Heitor Messias Gomes, Kaiky Leite Malaquias e Samuel Kushi de Paiva.
