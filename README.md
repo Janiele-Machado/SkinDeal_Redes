@@ -68,7 +68,11 @@ Essa abordagem elimina a necessidade de configurar endereços IP fixos entre os 
 
 ### Volume Compartilhado (Simulação NFS)
 
-Foi implementado através de volumes Docker para garantir a persistência dos arquivos enviados pelos usuários (uploads), mesmo após a recriação dos containers.
+Foi implementado através de um volume Docker denominado mysql_data, utilizado pelo serviço MySQL para armazenar os dados do banco de dados fora do container.
+
+Esse volume garante a persistência das informações cadastradas no sistema, permitindo que dados como usuários, skins, transações e propostas de venda permaneçam armazenados mesmo após a parada, reinicialização ou recriação dos containers.
+
+A solução simula o conceito de um servidor NFS (Network File System), onde os dados ficam armazenados de forma independente da aplicação, podendo ser acessados continuamente pelos serviços que necessitam dessas informações.
 
 ---
 
@@ -90,9 +94,57 @@ Apache + PHP
     |
     v
 Volume Docker Persistente
+  (mysql_data)
 ```
+## Demonstração da Persistência
 
-Todos os containers estão conectados através de uma rede Docker privada, permitindo a comunicação interna por meio do DNS interno fornecido pelo Docker.
+Para comprovar o funcionamento do volume persistente, foi realizado o seguinte procedimento:
+
+1. Cadastro de um usuário
+
+Foi criado um novo usuário através da aplicação.
+
+2. Verificação no banco de dados
+
+Consulta realizada na tabela de usuários:
+
+<img width="1882" height="913" alt="image" src="https://github.com/user-attachments/assets/95dd2212-0347-454e-b36f-09865b3909a7" />
+
+3. Desligamento dos containers
+   
+        docker compose down
+   
+   <img width="1698" height="250" alt="image" src="https://github.com/user-attachments/assets/970db9e8-d262-4279-94c5-b166ce110bb9" />
+   
+5. Inicialização dos containers
+
+       docker compose up -d
+   
+<img width="1706" height="282" alt="image" src="https://github.com/user-attachments/assets/03ac5db7-b925-4457-b660-ed32666c95f8" />
+
+5. Verificação da persistência
+
+Nova consulta realizada:
+
+    SELECT * FROM usuarios;
+
+O usuário anteriormente cadastrado permanece armazenado no banco de dados.
+
+<img width="1882" height="913" alt="image" src="https://github.com/user-attachments/assets/95dd2212-0347-454e-b36f-09865b3909a7" />
+
+## Evidência do Volume Docker
+
+## Listagem dos volumes criados:
+
+<img width="1086" height="311" alt="image" src="https://github.com/user-attachments/assets/77051492-0122-4fb1-a84e-89ec342d1daf" />
+
+## Inspeção do Volume
+
+Para verificar o local onde os dados estão armazenados:
+
+    docker volume inspect skindeal_mysql_data
+
+<img width="1635" height="483" alt="image" src="https://github.com/user-attachments/assets/b971d60a-7019-4966-b81d-af384c08ecdb" />
 
 ---
 
@@ -116,22 +168,6 @@ Todos os containers estão conectados através de uma rede Docker privada, permi
 | mysql_server_skindeal        | Banco de dados MySQL                   |
 | phpmyadmin_server_skindeal   | Administração do banco de dados        |
 | nginx_proxy_manager_skindeal | Proxy reverso e gerenciamento de hosts |
-
----
-
-## Persistência de Dados
-
-O projeto utiliza volumes Docker para garantir a persistência das informações:
-
-### mysql_data
-
-Responsável por armazenar os dados do banco MySQL.
-
-### uploads_data
-
-Responsável por armazenar os arquivos enviados pelos usuários, simulando um ambiente de armazenamento compartilhado semelhante ao NFS.
-
-Dessa forma, os dados permanecem disponíveis mesmo após a remoção ou recriação dos containers.
 
 ---
 
