@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks - SkinDeal</title>
+    <link rel="stylesheet" href="feedbacks.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="feedback-container">
+            <!-- Top Section with Title and Share Button -->
+            <div class="feedback-header">
+                <div class="header-left">
+                    <h1 class="feedback-title">Feedbacks</h1>
+                </div>
+                <button class="share-btn" id="share-btn" aria-label="Compartilhar">
+                    <svg class="share-icon" fill="none" viewBox="0 0 22 20">
+                        <path d="M13.5291 0V5.71429C2.70581 5.71429 0 11.5714 0 20C1.40703 14.3429 5.41162 11.4286 10.8232 11.4286H13.5291V17.1429L21.6464 8.11429L13.5291 0Z" fill="white"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Form Container -->
+            <div class="form-container">
+                <h2 class="form-title">Envie seu feedback</h2>
+
+                <form class="feedback-form" id="feedback-form">
+                    <!-- Nome Field -->
+                    <div class="form-group">
+                        <label for="name-input" class="form-label">Nome</label>
+                        <input 
+                            type="text" 
+                            id="name-input" 
+                            class="form-input"
+                            placeholder="email@dominio.com"
+                            required
+                        >
+                    </div>
+
+                    <!-- Comentário Field -->
+                    <div class="form-group">
+                        <label for="comment-input" class="form-label">Comentário</label>
+                        <textarea 
+                            id="comment-input" 
+                            class="form-textarea"
+                            placeholder="O que devemos melhorar ?"
+                            rows="6"
+                            required
+                        ></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+
+            <!-- Footer Text -->
+            <p class="footer-text">Seu feedback nos ajuda a melhorar</p>
+        </div>
+    </main>
+
+    <script src="feedbacks.js"></script>
+</body>
+</html>

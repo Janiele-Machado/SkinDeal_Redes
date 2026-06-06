@@ -1,0 +1,234 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', 'Arial', sans-serif;
+    background: linear-gradient(
+        rgba(20, 28, 36, 0.173) 0%, 
+        rgba(30, 41, 51, 0.17) 0%, 
+        rgba(28, 28, 36, 0.11) 0%, 
+        rgba(24, 28, 36, 0.19) 0%, 
+        rgba(56, 103, 123, 0.2) 0%, 
+        rgba(24, 28, 36, 0.16) 70.673%, 
+        rgba(24, 28, 36, 0.19) 93.269%, 
+        rgba(40, 65, 79, 0.2) 100%
+    ), 
+    linear-gradient(90deg, rgb(20, 28, 36) 0%, rgb(20, 28, 36) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 24px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 78px 24px 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 896px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+/* Title Section */
+.title-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    letter-spacing: -0.16px;
+}
+
+.title-divider {
+    width: 672px;
+    height: 0.5px;
+    background-color: #b5b5b5;
+    max-width: 100%;
+}
+
+/* History Grid */
+.history-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+/* History Card */
+.history-card {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    border: 1px solid #6b6b6b;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    height: 106px;
+}
+
+.history-card:hover {
+    transform: translateY(-2px);
+    background-color: #757575;
+}
+
+.location {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: white;
+    margin: 0;
+    letter-spacing: -0.16px;
+}
+
+.device-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: white;
+    opacity: 0.9;
+    margin: 0;
+    letter-spacing: -0.15px;
+}
+
+/* Footer Text */
+.footer-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+    margin: 24px 0 0;
+    letter-spacing: -0.15px;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title-divider {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 48px 16px 80px;
+    }
+
+    .container {
+        gap: 32px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 70px;
+    }
+
+    .back-btn {
+        font-size: 18px;
+    }
+
+    .page-title {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .history-card {
+        padding: 20px;
+        height: auto;
+        min-height: 90px;
+    }
+
+    .location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .device-info {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}

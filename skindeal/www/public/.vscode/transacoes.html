@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transações - SkinDeal</title>
+    <link rel="stylesheet" href="transacoes.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <span>Transações</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Transactions Grid -->
+            <div class="transactions-grid">
+                <!-- Transaction Card 1 - Vendido -->
+                <div class="transaction-card" data-transaction-id="1">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Vendido:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge success">
+                                <span>Sucesso</span>
+                            </div>
+                            <p class="amount">R$ 1250,00</p>
+                        </div>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(17).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+
+                <!-- Transaction Card 2 - Retirada -->
+                <div class="transaction-card" data-transaction-id="2">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Retirada:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge success">
+                                <span>Sucesso</span>
+                            </div>
+                            <p class="amount">R$ 400,00</p>
+                        </div>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(16).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+
+
+                <!-- Transaction Card 3 - Retirada -->
+                <div class="transaction-card" data-transaction-id="3">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Retirada:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge success">
+                                <span>Sucesso</span>
+                            </div>
+                            <p class="amount">R$ 285,00</p>
+                        </div>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(15).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+
+                <!-- Transaction Card 4 - Vendido -->
+                <div class="transaction-card" data-transaction-id="4">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Vendido:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge success">
+                                <span>Sucesso</span>
+                            </div>
+                            <p class="amount">R$ 2375,00</p>
+                        </div>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(14).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+
+
+                <!-- Transaction Card 5 - Vendido -->
+                <div class="transaction-card" data-transaction-id="5">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Vendido:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge success">
+                                <span>Sucesso</span>
+                            </div>
+                            <p class="amount">R$ 756,00</p>
+                        </div>
+                    </div>
+
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(13).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+
+
+                <!-- Transaction Card 6 - Negado -->
+                <div class="transaction-card denied" data-transaction-id="6">
+                    <div class="card-info">
+                        <div class="transaction-type">
+                            <p class="type-label">Negado:</p>
+                            <p class="balance-label">Saldo:</p>
+                        </div>
+                        <div class="transaction-status">
+                            <div class="status-badge denied">
+                                <span>Negado</span>
+                            </div>
+                            <p class="amount">R$ 2185,00</p>
+                        </div>
+                    </div>
+                    <div class="card-image-container">
+                        <img src="../Imagens%20do%20site/Image%20(12).png" alt="Item"
+                            class="item-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <script src="transacoes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vender Skin - SkinDeal</title>
+    <link rel="stylesheet" href="vender-skin.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-btn" id="back-btn">
+            <svg class="back-icon" fill="none" viewBox="0 0 22 20">
+                <path d="M13.6418 0V5.71429C2.72836 5.71429 0 11.5714 0 20C1.41875 14.3429 5.45671 11.4286 10.9134 11.4286H13.6418V17.1429L21.8268 8.11429L13.6418 0Z" fill="white"/>
+            </svg>
+        </button>
+
+        <!-- Content Card -->
+        <div class="content-card">
+            <!-- Product Header -->
+            <div class="product-header">
+                <div class="product-image-container">
+                    <img src="../Imagens%20do%20site/Image%20(Product)%20(2).png" 
+                         alt="Baioneta Crimson Web" 
+                         class="product-image"
+                         id="product-image">
+                </div>
+                
+                <div class="product-info">
+                    <h1 class="product-title">Baioneta Crimson Web</h1>
+                    <div class="game-badge">
+                        <img src="../Imagens%20do%20site/Image%20(Game)%20(2).png" 
+                             alt="CS2" 
+                             class="game-icon"
+                             id="game-icon">
+                        <span class="game-name">Counter-Strike 2</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Chart Section -->
+            <div class="chart-section">
+                <h2 class="chart-title">Valores medianos de venda</h2>
+                <p class="chart-subtitle">Intervalo do gráfico: Mensal</p>
+                
+                <!-- Chart Container -->
+                <div class="chart-container">
+                    <div class="chart-y-labels">
+                        <span>R$2500</span>
+                        <span>R$2000</span>
+                        <span>R$1500</span>
+                        <span>R$500</span>
+                    </div>
+                    
+                    <div class="chart-canvas" id="chart-canvas">
+                        <!-- Chart will be rendered here -->
+                    </div>
+                </div>
+
+                <p class="chart-x-label">Outubro/Novembro</p>
+
+                <!-- Chart Legend -->
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color green"></div>
+                        <span>Última venda</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color red"></div>
+                        <span>Procura/oferta</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Pricing Section -->
+            <div class="pricing-section">
+                <div class="skindeal-price">
+                    <span class="price-label">Preço SkinDeal:</span>
+                    <span class="price-value" id="skindeal-price">R$ 1300,82</span>
+                </div>
+
+                <!-- Input Fields -->
+                <div class="input-group">
+                    <label for="announced-price" class="input-label">Preço anúncio:</label>
+                    <div class="input-wrapper">
+                        <span class="currency-symbol">R$</span>
+                        <input type="text" 
+                               id="announced-price" 
+                               class="price-input"
+                               placeholder="0,00"
+                               maxlength="10">
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label for="you-receive" class="input-label">Você recebe:</label>
+                    <div class="input-wrapper readonly">
+                        <span class="currency-symbol">R$</span>
+                        <input type="text" 
+                               id="you-receive" 
+                               class="price-input"
+                               placeholder="0,00"
+                               readonly>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button class="submit-btn" id="submit-btn">
+                    Enviar proposta de Troca
+                </button>
+
+                <!-- Disclaimer -->
+                <p class="disclaimer">
+                    Ao clicar no botão "Enviar proposta de Troca" com o bot Skindeal, 
+                    você confirma a autorização da cobrança de uma taxa de 5% sobre o 
+                    valor total da transação
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="vender-skin.js"></script>
+</body>
+</html>

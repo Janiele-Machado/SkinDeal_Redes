@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacidade - SkinDeal</title>
+    <link rel="stylesheet" href="privacidade.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="privacy-container">
+            <!-- Title -->
+            <h1 class="privacy-title">Privacidade</h1>
+
+            <!-- Privacy Settings List -->
+            <div class="privacy-settings">
+                <!-- Privar perfil -->
+                <div class="privacy-item active" data-setting="profile">
+                    <span class="setting-text">Privar perfil</span>
+                    <button class="toggle-switch active" aria-label="Toggle Privar perfil">
+                        <span class="toggle-knob"></span>
+                    </button>
+                </div>
+
+                <!-- Privar Inventário -->
+                <div class="privacy-item" data-setting="inventory">
+                    <span class="setting-text">Privar Inventário</span>
+                    <button class="toggle-switch" aria-label="Toggle Privar Inventário">
+                        <span class="toggle-knob"></span>
+                    </button>
+                </div>
+
+                <!-- Ocultar e-mail -->
+                <div class="privacy-item" data-setting="email">
+                    <span class="setting-text">Ocultar e-mail</span>
+                    <button class="toggle-switch" aria-label="Toggle Ocultar e-mail">
+                        <span class="toggle-knob"></span>
+                    </button>
+                </div>
+
+                <!-- Ocultar ID Steam -->
+                <div class="privacy-item" data-setting="steamid">
+                    <span class="setting-text">Ocultar ID Steam</span>
+                    <button class="toggle-switch" aria-label="Toggle Ocultar ID Steam">
+                        <span class="toggle-knob"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="privacidade.js"></script>
+</body>
+</html>

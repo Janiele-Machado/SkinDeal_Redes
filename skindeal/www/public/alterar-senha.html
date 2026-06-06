@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinDeal - Alterar Senha</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="login-container">
+            <!-- Header -->
+            <div class="logo-section">
+                <h1 class="logo-title">SkinDeal</h1>
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 class="form-title">Alterar Senha</h2>
+                    <p class="form-subtitle">Digite seu e-mail e crie uma nova senha</p>
+                </div>
+
+                <!-- Mensagem de Sucesso -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p class="success-title">Senha alterada com sucesso!</p>
+                    <p class="success-text">Redirecionando para o login...</p>
+                </div>
+
+                <form id="alterarSenhaForm" class="form">
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="form-input" 
+                            placeholder="Exemplo@gmail.com"
+                        >
+                        <span id="emailError" class="error-message"></span>
+                    </div>
+
+                    <!-- Nova Senha -->
+                    <div class="form-group">
+                        <label class="form-label">Nova Senha</label>
+                        <input 
+                            type="password" 
+                            id="newPassword" 
+                            class="form-input" 
+                            placeholder="Mínimo 6 caracteres"
+                        >
+                        <span id="newPasswordError" class="error-message"></span>
+                    </div>
+
+                    <!-- Confirmar Nova Senha -->
+                    <div class="form-group">
+                        <label class="form-label">Confirmar Nova Senha</label>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            class="form-input" 
+                            placeholder="Digite a senha novamente"
+                        >
+                        <span id="confirmPasswordError" class="error-message"></span>
+                    </div>
+
+                    <!-- Botão Alterar Senha -->
+                    <button type="submit" id="submitBtn" class="btn-primary" style="margin-top: 16px;">
+                        Alterar Senha
+                    </button>
+                </form>
+
+                <!-- Link para Login -->
+                <div class="register-container">
+                    <p class="register-text">
+                        Lembrou sua senha? 
+                        <a href="login.html" class="link-blue">voltar ao login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="alterar-senha.js"></script>
+</body>
+</html>

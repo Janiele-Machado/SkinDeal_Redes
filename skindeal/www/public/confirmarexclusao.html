@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Exclusão - SkinDeal</title>
+    <link rel="stylesheet" href="confirmarexclusao.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Title with divider -->
+            <div class="title-section">
+                <h1 class="page-title">Excluir Conta</h1>
+                <div class="title-divider"></div>
+            </div>
+
+            <!-- Warning Message -->
+            <div class="warning-box">
+                <svg class="warning-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M12 9V13M12 17H12.01M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#ff4444" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div class="warning-content">
+                    <h3 class="warning-title">Atenção!</h3>
+                    <p class="warning-text">Esta ação é permanente e não pode ser desfeita. Todos os seus dados, inventário, transações e histórico serão perdidos.</p>
+                </div>
+            </div>
+
+            <!-- Confirmation Form -->
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="password" class="form-label">Digite sua senha para confirmar</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        class="form-input" 
+                        placeholder="Senha"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-text" class="form-label">Digite "EXCLUIR" para confirmar</label>
+                    <input 
+                        type="text" 
+                        id="confirm-text" 
+                        class="form-input" 
+                        placeholder="EXCLUIR"
+                        required
+                    >
+                </div>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button class="btn-delete" id="delete-btn" disabled>
+                        Excluir Conta Permanentemente
+                    </button>
+                    <button class="btn-cancel" id="cancel-btn">
+                        Cancelar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Overlay (hidden by default) -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-content">
+            <p class="modal-title">Tem certeza de que deseja excluir?</p>
+            <div class="modal-buttons">
+                <button class="modal-btn-delete" id="modal-delete-btn">Excluir</button>
+                <div class="modal-divider"></div>
+                <button class="modal-btn-cancel" id="modal-cancel-btn">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="confirmarexclusao.js"></script>
+</body>
+</html>

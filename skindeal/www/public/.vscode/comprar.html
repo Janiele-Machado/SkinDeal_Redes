@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar - SkinDeal</title>
+    <link rel="stylesheet" href="comprar.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="header-title" id="header-title">Bayonet - Crimson Web</h1>
+            <button class="share-btn" id="share-btn" aria-label="Compartilhar">
+                <svg class="share-icon" fill="none" viewBox="0 0 22 20">
+                    <path d="M13.6418 0V5.71429C2.72836 5.71429 0 11.5714 0 20C1.41875 14.3429 5.45671 11.4286 10.9134 11.4286H13.6418V17.1429L21.8268 8.11429L13.6418 0Z" fill="white"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Product Section -->
+            <section class="product-section">
+                <!-- Product Image Card -->
+                <div class="product-image-card">
+                    <div class="image-wrapper">
+                        <img src="https://cdn.discordapp.com/attachments/1234567890/image-removebg-preview21.png" 
+                             alt="Bayonet - Crimson Web" 
+                             class="product-image"
+                             id="product-image">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-game">
+                            <img src="https://cdn.cloudflare.steamstatic.com/apps/730/header.jpg" 
+                                 alt="Counter-Strike 2" 
+                                 class="game-icon"
+                                 id="game-icon">
+                            <span class="game-name">Counter-Strike 2</span>
+                        </div>
+                        <h2 class="product-name">Bayonet - Crimson Web</h2>
+                        <div class="product-price-display">
+                            <img src="https://steamcommunity-a.akamaihd.net/economy/image/IzMF03bi9WpSBq-S-ekoE33L-iLqGFHVaU25ZzQNQcXdA2l_qgtoa2jmZWXYS04njOL-VA/360fx360f" 
+                                 alt="Steam" 
+                                 class="steam-icon"
+                                 id="steam-icon">
+                            <span class="price-value">R$ 1312,52</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Details Section -->
+            <section class="details-section">
+                <div class="details-card">
+                    <!-- Exterior Quality -->
+                    <div class="detail-item">
+                        <span class="detail-label">Exterior:</span>
+                        <span class="detail-value">Testado em Campo</span>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="description-section">
+                        <p class="description-text">
+                            Com design relativamente inalterado desde a segunda Guerra Mundial, a baioneta ainda tem um lugar em estratégias militares modernas. Esta arma foi pintada usando um hidrográfico de teia de aranha sobre um revestimento vermelho com camada de verniz.
+                        </p>
+                    </div>
+
+                    <!-- Price Chart -->
+                    <div class="price-chart-section">
+                        <h3 class="chart-title">Histórico de Preços</h3>
+                        <div class="chart-container">
+                            <div class="chart-y-axis">
+                                <span class="y-label">R$2500</span>
+                                <span class="y-label">R$2000</span>
+                                <span class="y-label">R$1500</span>
+                                <span class="y-label">R$1000</span>
+                                <span class="y-label">R$500</span>
+                            </div>
+                            <div class="chart-area">
+                                <svg class="price-chart" viewBox="0 0 300 120" preserveAspectRatio="none">
+                                    <!-- Background -->
+                                    <rect width="300" height="120" fill="#404040" rx="4"/>
+                                    
+                                    <!-- Horizontal Grid Lines -->
+                                    <line x1="0" y1="24" x2="300" y2="24" stroke="rgba(230, 230, 230, 0.2)" stroke-width="1"/>
+                                    <line x1="0" y1="48" x2="300" y2="48" stroke="rgba(230, 230, 230, 0.2)" stroke-width="1"/>
+                                    <line x1="0" y1="72" x2="300" y2="72" stroke="rgba(230, 230, 230, 0.2)" stroke-width="1"/>
+                                    <line x1="0" y1="96" x2="300" y2="96" stroke="rgba(230, 230, 230, 0.2)" stroke-width="1"/>
+                                    
+                                    <!-- Price Line -->
+                                    <polyline 
+                                        points="1,80 30,85 50,75 70,70 90,65 110,60 130,55 150,58 170,62 190,60 210,58 230,55 250,52 270,50 300,28" 
+                                        fill="none" 
+                                        stroke="#00E832" 
+                                        stroke-width="2.5" 
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"/>
+                                    
+                                    <!-- Data Points -->
+                                    <circle cx="1" cy="80" r="3" fill="#00E832"/>
+                                    <circle cx="30" cy="85" r="3" fill="#00E832"/>
+                                    <circle cx="50" cy="75" r="3" fill="#00E832"/>
+                                    <circle cx="70" cy="70" r="3" fill="#00E832"/>
+                                    <circle cx="90" cy="65" r="3" fill="#00E832"/>
+                                    <circle cx="110" cy="60" r="3" fill="#00E832"/>
+                                    <circle cx="130" cy="55" r="3" fill="#00E832"/>
+                                    <circle cx="150" cy="58" r="3" fill="#00E832"/>
+                                    <circle cx="170" cy="62" r="3" fill="#00E832"/>
+                                    <circle cx="190" cy="60" r="3" fill="#00E832"/>
+                                    <circle cx="210" cy="58" r="3" fill="#00E832"/>
+                                    <circle cx="230" cy="55" r="3" fill="#00E832"/>
+                                    <circle cx="250" cy="52" r="3" fill="#00E832"/>
+                                    <circle cx="270" cy="50" r="3" fill="#00E832"/>
+                                    <circle cx="299" cy="28" r="3" fill="#00E832"/>
+                                </svg>
+                                <div class="chart-x-labels">
+                                    <span>Jan</span>
+                                    <span>Mar</span>
+                                    <span>Mai</span>
+                                    <span>Jul</span>
+                                    <span>Set</span>
+                                    <span>Nov</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Price Info -->
+                    <div class="price-info-section">
+                        <div class="price-item">
+                            <span class="price-label">Preço SkinDeal:</span>
+                            <span class="price-amount skindeal-price">R$ 1250,50</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="price-label">Preço anúnciado:</span>
+                            <span class="price-amount announced-price">R$ 1312,52</span>
+                        </div>
+                    </div>
+
+                    <!-- Buy Button -->
+                    <button class="buy-btn" id="buy-btn">
+                        Finalizar Compra
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="comprar.js"></script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta - SkinDeal</title>
+    <link rel="stylesheet" href="minhaconta.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Title -->
+            <h1 class="page-title">Minha conta</h1>
+
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <div class="profile-header">
+                    <!-- Profile Image -->
+                    <div class="profile-image-wrapper">
+                        <img 
+                            src="../Imagens%20do%20site/Image%20(Zeca%20Pagodinho).png" 
+                            alt="Zeca Pagodinho" 
+                            class="profile-image"
+                        >
+                    </div>
+
+                    <!-- Profile Info -->
+                    <div class="profile-info">
+                        <h2 class="profile-name">Zeca Pagodinho</h2>
+                        <p class="profile-id">ID: 459911657</p>
+                        <p class="profile-email">heitormessias13@gmail.com</p>
+                        <p class="profile-date">Conta Criada em: 18/04/2018</p>
+                        
+                        <div class="verified-badge">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(6).png" 
+                                alt="Verificado" 
+                                class="verified-icon"
+                            >
+                            <span class="verified-text">Conta Verificada</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Options Grid -->
+            <div class="options-grid">
+                <!-- Left Column -->
+                <div class="options-column">
+                    <!-- Ganhos totais -->
+                    <div class="option-item total-earnings">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(7).png" 
+                                alt="Ganhos" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Ganhos totais</span>
+                        </div>
+                        <span class="earnings-value">R$ 1500,00</span>
+                    </div>
+
+                    <!-- Minhas compras -->
+                    <button class="option-item menu-option" data-action="compras">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(5).png" 
+                                alt="Compras" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Minhas compras</span>
+                        </div>
+                        <svg class="arrow-icon" fill="none" viewBox="0 0 12 16">
+                            <path d="M13 8L1 15.5V0.5L13 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+
+                    <div class="divider"></div>
+
+                    <!-- Minhas vendas -->
+                    <button class="option-item menu-option" data-action="vendas">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(4).png" 
+                                alt="Vendas" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Minhas vendas</span>
+                        </div>
+                        <svg class="arrow-icon arrow-rotated" fill="none" viewBox="0 0 12 16">
+                            <path d="M0 8L12 0.5V15.5L0 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+
+                    <div class="divider"></div>
+
+                    <!-- Histórico de login -->
+                    <button class="option-item menu-option" data-action="historico">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(3).png" 
+                                alt="Histórico" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Histórico de login</span>
+                        </div>
+                        <svg class="arrow-icon arrow-rotated" fill="none" viewBox="0 0 12 16">
+                            <path d="M0 8L12 0.5V15.5L0 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Right Column -->
+                <div class="options-column">
+                    <!-- Trocar conta -->
+                    <button class="option-item menu-option" data-action="trocar">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(2).png" 
+                                alt="Trocar conta" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Trocar conta</span>
+                        </div>
+                        <svg class="arrow-icon arrow-rotated" fill="none" viewBox="0 0 12 16">
+                            <path d="M0 8L12 0.5V15.5L0 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+
+                    <div class="divider"></div>
+
+                    <!-- Excluir conta -->
+                    <button class="option-item menu-option" data-action="excluir">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image%20(1).png" 
+                                alt="Excluir conta" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Excluir conta</span>
+                        </div>
+                        <svg class="arrow-icon arrow-rotated" fill="none" viewBox="0 0 12 16">
+                            <path d="M0 8L12 0.5V15.5L0 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+
+                    <div class="divider"></div>
+
+                    <!-- Sair -->
+                    <button class="option-item menu-option" data-action="sair">
+                        <div class="option-left">
+                            <img 
+                                src="../Imagens%20do%20site/Image.png" 
+                                alt="Sair" 
+                                class="option-icon"
+                            >
+                            <span class="option-text">Sair</span>
+                        </div>
+                        <svg class="arrow-icon arrow-rotated" fill="none" viewBox="0 0 12 16">
+                            <path d="M0 8L12 0.5V15.5L0 8Z" fill="white" opacity="0.7"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal Trocar Conta -->
+    <div class="modal-overlay" id="modal-trocar-conta">
+        <div class="modal-trocar-content">
+            <!-- Account 1 - Current -->
+            <div class="modal-account-item current-account" data-account="zeca">
+                <img 
+                    src="../Imagens%20do%20site/07a12d69ab4c8ad8a4988544fdc25f16751ed2e5_widemd%201.png" 
+                    alt="Zeca Pagodinho" 
+                    class="modal-account-image"
+                >
+                <div class="modal-account-info">
+                    <p class="modal-account-name">Zeca Pagodinho</p>
+                    <span class="modal-logado-badge">Logado</span>
+                </div>
+            </div>
+
+            <div class="modal-divider"></div>
+
+            <!-- Account 2 -->
+            <div class="modal-account-item" data-account="raca">
+                <img 
+                    src="../Imagens%20do%20site/images%201.png" 
+                    alt="RAÇA ABSOLUTA" 
+                    class="modal-account-image"
+                >
+                <p class="modal-account-name">RAÇA ABSOLUTA</p>
+            </div>
+
+            <div class="modal-divider-vertical"></div>
+
+            <!-- Add New Session -->
+            <div class="modal-add-session">
+                <p class="modal-add-text">Adicionar uma nova sessão</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="minhaconta.js"></script>
+</body>
+</html>

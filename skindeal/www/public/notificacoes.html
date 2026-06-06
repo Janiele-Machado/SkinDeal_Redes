@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações - SkinDeal</title>
+    <link rel="stylesheet" href="notificacoes.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Title -->
+            <h1 class="page-title">Notificações</h1>
+
+            <!-- Notification Items -->
+            <div class="notification-list">
+                <!-- Exibir notificações - Active -->
+                <div class="notification-item active" data-notification="display">
+                    <p class="notification-text">Exibir notificações</p>
+                    <div class="toggle-switch active" data-toggle="display">
+                        <div class="toggle-knob"></div>
+                    </div>
+                </div>
+
+                <!-- Confirmação de compra -->
+                <div class="notification-item" data-notification="purchase">
+                    <p class="notification-text">Confirmação de compra</p>
+                    <div class="toggle-switch" data-toggle="purchase">
+                        <div class="toggle-knob"></div>
+                    </div>
+                </div>
+
+                <!-- Confirmação de venda -->
+                <div class="notification-item" data-notification="sale">
+                    <p class="notification-text">Confirmação de venda</p>
+                    <div class="toggle-switch" data-toggle="sale">
+                        <div class="toggle-knob"></div>
+                    </div>
+                </div>
+
+                <!-- Novas skins adicionadas -->
+                <div class="notification-item" data-notification="newskins">
+                    <p class="notification-text">Novas skins adicionadas</p>
+                    <div class="toggle-switch" data-toggle="newskins">
+                        <div class="toggle-knob"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="notificacoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento Realizado - SkinDeal</title>
+    <link rel="stylesheet" href="pagamento-confirmado.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-btn" id="back-btn">
+            <svg class="back-icon" fill="none" viewBox="0 0 22 20">
+                <path d="M13.6418 0V5.71429C2.72836 5.71429 0 11.5714 0 20C1.41875 14.3429 5.45671 11.4286 10.9134 11.4286H13.6418V17.1429L21.8268 8.11429L13.6418 0Z" fill="white"/>
+            </svg>
+        </button>
+
+        <!-- Success Content -->
+        <div class="success-content">
+            <h1 class="title">Pagamento</h1>
+            <h1 class="title">Realizado</h1>
+
+            <!-- Check Icon -->
+            <div class="check-container">
+                <img src="../Imagens%20do%20site/images__8_-removebg-preview%201.png" 
+                     alt="Pagamento Realizado" 
+                     class="check-icon"
+                     id="check-icon">
+            </div>
+
+            <!-- Amount -->
+            <div class="amount" id="payment-amount">R$ 1312,52</div>
+
+            <!-- Success Message -->
+            <p class="message">O pagamento foi realizado com sucesso.</p>
+
+            <!-- Action Button -->
+            <button class="action-btn" id="action-btn">
+                Ir para troca
+            </button>
+        </div>
+    </div>
+
+    <script src="pagamento-confirmado.js"></script>
+</body>
+</html>

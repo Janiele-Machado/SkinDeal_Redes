@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Senha - SkinDeal</title>
+    <link rel="stylesheet" href="alterarsenha.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="form-container">
+            <h1 class="page-title">Alterar Senha</h1>
+
+            <form class="password-form" id="password-form">
+                <!-- E-mail atual -->
+                <div class="input-wrapper">
+                    <div class="input-container">
+                        <input 
+                            type="email" 
+                            id="current-email" 
+                            class="password-input" 
+                            placeholder="email@dominio.com"
+                            required
+                        >
+                        <label class="input-label">E-mail atual</label>
+                    </div>
+                    
+                        
+                </div>
+
+                <!-- Nova senha -->
+                <div class="input-wrapper">
+                    <div class="input-container">
+                        
+                        <input 
+                            type="password" 
+                            id="new-password" 
+                            class="password-input" 
+                            placeholder="Digite a nova senha"
+                            required
+                        >
+                        <label class="input-label">Nova senha</label>
+                    </div>
+                </div>
+
+                <!-- Confirmar senha -->
+                <div class="input-wrapper">
+                    <div class="input-container">
+                        
+                        <input 
+                            type="password" 
+                            id="confirm-password" 
+                            class="password-input" 
+                            placeholder="Confirme a nova senha"
+                            required
+                        >
+                        <label class="input-label">Confirmar senha</label>
+                    </div>
+                    
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    Redefinir senha
+                </button>
+            </form>
+        </div>
+    </main>
+
+    <script src="alterarsenha.js"></script>
+</body>
+</html>

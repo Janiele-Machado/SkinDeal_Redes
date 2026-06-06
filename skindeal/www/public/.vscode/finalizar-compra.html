@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra - SkinDeal</title>
+    <link rel="stylesheet" href="finalizar-compra.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <h1 class="header-title">Pagamento</h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Payment Card -->
+            <div class="payment-card">
+                <h2 class="payment-title">Pagamento</h2>
+                <div class="divider"></div>
+
+                <!-- Valor a ser pago -->
+                <section class="payment-section">
+                    <h3 class="section-label">Valor a ser pago:</h3>
+                    <div class="value-box">
+                        <span class="value-amount" id="payment-amount">R$ 1312,51</span>
+                    </div>
+                </section>
+
+                <!-- Método de Pagamento -->
+                <section class="payment-section">
+                    <h3 class="section-label">Selecione um método de pagamento</h3>
+                    <div class="payment-method-box">
+                        <img src="../Imagens%20do%20site/pix-removebg-preview%201.png" 
+                             alt="PIX" 
+                             class="pix-logo"
+                             id="pix-logo">
+                    </div>
+                </section>
+
+                <div class="divider"></div>
+
+                <!-- Perfil Anunciante -->
+                <section class="advertiser-section">
+                    <h3 class="section-title">Perfil anunciante:</h3>
+                    
+                    <div class="advertiser-info">
+                        <img src="../Imagens%20do%20site/07a12d69ab4c8ad8a4988544fdc25f16751ed2e5_widemd%201.png" 
+                             alt="Avatar" 
+                             class="advertiser-avatar"
+                             id="advertiser-avatar">
+                        <div class="advertiser-details">
+                            <p class="advertiser-name" id="advertiser-name">Zeca Pagadinho</p>
+                            <p class="advertiser-id">ID: <span id="advertiser-id">459911657</span></p>
+                        </div>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Taxa:</span>
+                        <span class="info-value" id="fee">0%</span>
+                    </div>
+
+                    <div class="info-row">
+                        <span class="info-label">Método pagamento:</span>
+                        <span class="info-value" id="payment-method">Pix</span>
+                    </div>
+                </section>
+
+                <!-- Produto -->
+                <section class="product-preview">
+                    <div class="product-box">
+                        <img src="../Imagens%20do%20site/image-removebg-preview%20(2)%201.png" 
+                             alt="Produto" 
+                             class="product-image"
+                             id="product-preview-image">
+                        <p class="product-name" id="product-preview-name">Bayonet Crimson Web</p>
+                    </div>
+                </section>
+
+                <!-- Botão de Pagamento -->
+                <button class="payment-btn" id="payment-btn">
+                    Pagar R$ <span id="payment-btn-amount">1312,51</span> via PIX
+                </button>
+            </div>
+
+            <!-- QR Code Section (Hidden initially) -->
+            <div class="qr-code-section" id="qr-code-section" style="display: none;">
+                <div class="qr-code-card">
+                    <h3 class="qr-title">Pague com PIX</h3>
+                    <div class="qr-code-container">
+                        <div class="qr-code-placeholder" id="qr-code-svg">
+                            <!-- QR Code do Figma será inserido aqui -->
+                        </div>
+                        <p class="qr-instruction">Escaneie o QR Code com o app do seu banco</p>
+                    </div>
+                    
+                    <div class="pix-copy-section">
+                        <p class="pix-label">Ou copie o código PIX:</p>
+                        <div class="pix-code-box">
+                            <input type="text" 
+                                   class="pix-code-input" 
+                                   id="pix-code" 
+                                   value="00020126580014BR.GOV.BCB.PIX0136..." 
+                                   readonly>
+                            <button class="copy-btn" id="copy-btn">Copiar</button>
+                        </div>
+                    </div>
+
+                    <div class="payment-timer">
+                        <p class="timer-text">Tempo restante: <span id="timer">10:00</span></p>
+                    </div>
+
+                    <!-- Confirm Payment Button -->
+                    <button class="confirm-payment-btn" id="confirm-payment-btn">
+                        Confirmar Pagamento (Demo)
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="finalizar-compra.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Senha - SkinDeal</title>
+    <link rel="stylesheet" href="confirmarsenha.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="confirmation-container">
+            <h1 class="page-title">Acabamos de enviar um código para seu e-mail</h1>
+            
+            <p class="description">
+                Insira no campo abaixo o código de verificação de 5 dígitos enviado para seu email.
+            </p>
+
+            <!-- Code Input Container -->
+            <div class="code-container" id="code-container">
+                <input 
+                    type="text" 
+                    maxlength="1" 
+                    class="code-input" 
+                    data-index="0"
+                    pattern="[0-9]"
+                    inputmode="numeric"
+                >
+                <input 
+                    type="text" 
+                    maxlength="1" 
+                    class="code-input" 
+                    data-index="1"
+                    pattern="[0-9]"
+                    inputmode="numeric"
+                >
+                <input 
+                    type="text" 
+                    maxlength="1" 
+                    class="code-input" 
+                    data-index="2"
+                    pattern="[0-9]"
+                    inputmode="numeric"
+                >
+                <input 
+                    type="text" 
+                    maxlength="1" 
+                    class="code-input" 
+                    data-index="3"
+                    pattern="[0-9]"
+                    inputmode="numeric"
+                >
+                <input 
+                    type="text" 
+                    maxlength="1" 
+                    class="code-input" 
+                    data-index="4"
+                    pattern="[0-9]"
+                    inputmode="numeric"
+                >
+            </div>
+
+            <!-- Resend Code Button -->
+            <button class="resend-btn" id="resend-btn">
+                Reenviar código
+            </button>
+
+            <!-- Confirm Button -->
+            <button class="confirm-btn" id="confirm-btn" disabled>
+                Confirmar
+            </button>
+
+            <!-- Help Section -->
+            <div class="help-section">
+                <p class="help-title">Ajuda:</p>
+                <p class="help-text">
+                    Caso não encontrar o e-mail em sua caixa de entrada. Verificar a pasta de Spam!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="confirmarsenha.js"></script>
+</body>
+</html>

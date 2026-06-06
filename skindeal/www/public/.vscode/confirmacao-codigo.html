@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinDeal - Confirmação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&family=Arimo:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <div class="confirmacao-header">
+        <div class="confirmacao-header-container">
+            <button class="btn-voltar" id="btnVoltar">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M8 15L1 8L8 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14 8H2" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <div class="page-container">
+        <div class="confirmacao-container">
+            <div class="confirmacao-card">
+                <h1 class="confirmacao-title">Acabamos de enviar um código para seu e-mail</h1>
+                <p class="confirmacao-subtitle">
+                    Insira no campo abaixo o código de verificação de 5 dígitos enviado para seu email.
+                </p>
+
+                <!-- Inputs de Código -->
+                <div class="code-inputs">
+                    <input type="text" maxlength="1" class="code-input" id="code1" autocomplete="off">
+                    <input type="text" maxlength="1" class="code-input" id="code2" autocomplete="off">
+                    <input type="text" maxlength="1" class="code-input" id="code3" autocomplete="off">
+                    <input type="text" maxlength="1" class="code-input" id="code4" autocomplete="off">
+                    <input type="text" maxlength="1" class="code-input" id="code5" autocomplete="off">
+                </div>
+
+                <!-- Reenviar Código -->
+                <button class="link-reenviar" id="btnReenviar">Reenviar código</button>
+
+                <!-- Botão Confirmar -->
+                <button class="btn-confirmar" id="btnConfirmar" disabled>Confirmar</button>
+
+                <!-- Ajuda -->
+                <div class="ajuda-container">
+                    <p class="ajuda-title">Ajuda:</p>
+                    <p class="ajuda-text">
+                        Caso não encontrar o e-mail em sua caixa de entrada. Verificar a pasta de Spam!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="confirmacao-codigo.js"></script>
+</body>
+</html>

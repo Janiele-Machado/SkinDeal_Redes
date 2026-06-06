@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinDeal - Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <div class="login-container">
+            <!-- Header -->
+            <div class="logo-section">
+                <h1 class="logo-title">SkinDeal</h1>
+            </div>
+
+            <!-- Formulário -->
+            <div class="form-container">
+                <div class="form-header">
+                    <h2 class="form-title">Cadastro</h2>
+                    <p class="form-subtitle">Crie sua conta no Skin Deal</p>
+                </div>
+
+                <form id="registerForm" class="form">
+                    <!-- Nome -->
+                    <div class="form-group">
+                        <label class="form-label">Nome</label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            class="form-input" 
+                            placeholder="Seu nome completo"
+                        >
+                        <span id="nameError" class="error-message"></span>
+                    </div>
+
+                    <!-- E-mail -->
+                    <div class="form-group">
+                        <label class="form-label">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            class="form-input" 
+                            placeholder="Exemplo@gmail.com"
+                        >
+                        <span id="emailError" class="error-message"></span>
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="form-group">
+                        <label class="form-label">Senha</label>
+                        <input 
+                            type="password" 
+                            id="password" 
+                            class="form-input" 
+                            placeholder="Mínimo 6 caracteres"
+                        >
+                        <span id="passwordError" class="error-message"></span>
+                    </div>
+
+                    <!-- Confirmar Senha -->
+                    <div class="form-group">
+                        <label class="form-label">Confirmar Senha</label>
+                        <input 
+                            type="password" 
+                            id="confirmPassword" 
+                            class="form-input" 
+                            placeholder="Digite a senha novamente"
+                        >
+                        <span id="confirmPasswordError" class="error-message"></span>
+                    </div>
+
+                    <!-- Botão Cadastrar -->
+                    <button type="submit" class="btn-primary" style="margin-top: 16px;">
+                        Cadastrar
+                    </button>
+                </form>
+
+                <!-- Link para Login -->
+                <div class="register-container">
+                    <p class="register-text">
+                        Já tem uma conta? 
+                        <a href="login.html" class="link-blue">faça login aqui</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cadastro.js"></script>
+</body>
+</html>

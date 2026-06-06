@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Link Steam - SkinDeal</title>
+    <link rel="stylesheet" href="tradelink.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="trade-link-container">
+            <!-- Title -->
+            <h1 class="page-title">Trade Link Steam</h1>
+            
+            <!-- Description -->
+            <p class="description">
+                Conecte sua conta Steam para enviar e receber skin com segurança
+            </p>
+
+            <!-- Trade Link Section -->
+            <div class="link-section">
+                <!-- Current Link Label -->
+                <div class="link-label">
+                    <span class="link-icon">🔗</span>
+                    <span class="link-text">Seu trade Link atual:</span>
+                </div>
+
+                <!-- Link Display -->
+                <div class="link-display">
+                    <p class="link-url" id="trade-link-url">
+                        https://steamcommunity.com/tradeoffer/new/?partner=459911657&token=vIBXDVRN
+                    </p>
+                </div>
+
+                <!-- Copy Button -->
+                <button class="copy-btn" id="copy-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/54/54702.png" alt="Copy" class="copy-icon">
+                    <span>Copiar</span>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="tradelink.js"></script>
+</body>
+</html>

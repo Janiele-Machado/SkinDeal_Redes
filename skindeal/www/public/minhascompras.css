@@ -1,0 +1,295 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Inter', 'Arial', sans-serif;
+    background: linear-gradient(
+        180deg,
+        rgba(29, 42, 53, 1) 0%,
+        rgba(32, 46, 58, 1) 100%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+.header {
+    background-color: transparent;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 24px;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1000px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 24px 100px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Title Row */
+.title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.page-title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: white;
+    margin: 0;
+}
+
+.filter-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #10355b;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.filter-btn:hover {
+    background-color: #144268;
+}
+
+.filter-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.filter-btn span {
+    font-family: 'SF Pro', 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Purchases Grid */
+.purchases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+/* Purchase Card */
+.purchase-card {
+    background-color: #6b6b6b;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 24px 0 0;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.purchase-card:hover {
+    transform: translateY(-2px);
+    background-color: #757575;
+}
+
+.card-image-container {
+    width: 96px;
+    height: 80px;
+    background: linear-gradient(180deg, #2c2c2c 0%, #302c2c 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.item-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 12px 16px 0 0;
+    min-width: 0;
+}
+
+.item-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    color: white;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-game {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #cccccc;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-date {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: white;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .purchases-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 0 16px 80px;
+    }
+
+    .container {
+        gap: 32px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        height: 36px;
+    }
+
+    .filter-btn span {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        height: 60px;
+        padding: 0 16px;
+    }
+
+    .back-btn {
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 18px;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        height: 32px;
+        gap: 8px;
+    }
+
+    .filter-btn span {
+        font-size: 12px;
+    }
+
+    .filter-icon {
+        width: 14px;
+        height: 14px;
+    }
+
+    .purchase-card {
+        padding: 0 16px 0 0;
+        gap: 12px;
+    }
+
+    .card-image-container {
+        width: 80px;
+        height: 70px;
+    }
+
+    .item-name {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .item-game {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .item-date {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}

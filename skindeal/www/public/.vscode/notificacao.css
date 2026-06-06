@@ -1,0 +1,220 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background: linear-gradient(
+        rgba(20, 28, 36, 0.173) 0%, 
+        rgba(30, 41, 51, 0.17) 0%, 
+        rgba(28, 28, 36, 0.11) 0%, 
+        rgba(24, 28, 36, 0.19) 0%, 
+        rgba(56, 103, 123, 0.2) 0%, 
+        rgba(24, 28, 36, 0.16) 70.673%, 
+        rgba(24, 28, 36, 0.19) 93.269%, 
+        rgba(40, 65, 79, 0.2) 100%
+    ), 
+    linear-gradient(90deg, rgb(20, 28, 36) 0%, rgb(20, 28, 36) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 24px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 24px;
+}
+
+.container {
+    width: 100%;
+    max-width: 768px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Page Title */
+.page-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+}
+
+/* Divider */
+.divider {
+    height: 0.5px;
+    background-color: #b5b5b5;
+    width: 100%;
+}
+
+/* Notifications List */
+.notifications-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* Notification Card */
+.notification-card {
+    background-color: #6b6b6b;
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    gap: 16px;
+    height: 130px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid #6b6b6b;
+    transition: transform 0.2s, background-color 0.2s;
+    cursor: pointer;
+}
+
+.notification-card:hover {
+    background-color: #757575;
+    transform: translateY(-2px);
+}
+
+.notification-icon {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    flex-shrink: 0;
+}
+
+.notification-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notification-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+}
+
+.notification-description {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 21px;
+    margin: 0;
+}
+
+.notification-time {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 15px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 960px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-content {
+        padding: 40px 16px;
+    }
+
+    .container {
+        gap: 24px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .notification-card {
+        padding: 20px;
+        height: auto;
+        min-height: 120px;
+    }
+
+    .notification-title {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .notification-description {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .notification-time {
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .back-btn {
+        font-size: 18px;
+    }
+
+    .header {
+        height: 70px;
+    }
+}

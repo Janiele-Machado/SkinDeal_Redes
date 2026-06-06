@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processo de Troca - Venda - SkinDeal</title>
+    <link rel="stylesheet" href="troca-venda.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Back Button -->
+        <button class="back-btn" id="back-btn">
+            <svg class="back-icon" fill="none" viewBox="0 0 22 20">
+                <path d="M13.6418 0V5.71429C2.72836 5.71429 0 11.5714 0 20C1.41875 14.3429 5.45671 11.4286 10.9134 11.4286H13.6418V17.1429L21.8268 8.11429L13.6418 0Z" fill="white"/>
+            </svg>
+        </button>
+
+        <!-- Header Title -->
+        <h1 class="page-title">Processo de Troca</h1>
+
+        <!-- Trade Container -->
+        <div class="trade-container">
+            <!-- Your Items Section -->
+            <div class="trade-section your-items-section">
+                <div class="section-header">
+                    <img src="../Imagens%20do%20site/07a12d69ab4c8ad8a4988544fdc25f16751ed2e5_widemd%201.png" 
+                         alt="Usuário" 
+                         class="user-avatar"
+                         id="user-avatar">
+                    <h2 class="section-title">Seus itens:</h2>
+                </div>
+                
+                <div class="items-container">
+                    <!-- User Item -->
+                    <div class="item-card">
+                        <img src="../Imagens%20do%20site/Image%20(Product)%20(2).png" 
+                             alt="Item" 
+                             class="item-image"
+                             id="user-item">
+                    </div>
+                </div>
+
+                <!-- Price Info -->
+                <div class="price-info">
+                    <div class="price-row">
+                        <span class="price-label">Preço anunciado:</span>
+                        <span class="price-value announced" id="announced-price">R$ 0,00</span>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-label">Você recebe:</span>
+                        <span class="price-value received" id="you-receive">R$ 0,00</span>
+                    </div>
+                    <div class="price-row tax">
+                        <span class="price-label">Taxa (5%):</span>
+                        <span class="price-value tax-amount" id="tax-amount">R$ 0,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Bot Items Section -->
+            <div class="trade-section bot-items-section">
+                <div class="section-header">
+                    <img src="../Imagens%20do%20site/image%205.png" 
+                         alt="Bot" 
+                         class="bot-avatar"
+                         id="bot-avatar">
+                    <h2 class="section-title">Itens do bot #800</h2>
+                </div>
+                
+                <div class="items-container empty-state">
+                    <div class="money-icon">💰</div>
+                    <p class="empty-message">O bot irá processar o pagamento</p>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider"></div>
+
+            <!-- Action Buttons -->
+            <div class="actions-container">
+                <button class="action-btn steam-btn" id="steam-btn">
+                    Aceitar na Steam
+                </button>
+                <button class="action-btn browser-btn" id="browser-btn">
+                    Aceitar no navegador
+                </button>
+            </div>
+
+            <!-- Bot Info -->
+            <div class="bot-info">
+                <p class="bot-info-text">
+                    TRADE BOT #800<br>
+                    Cadastro: 01.09.2025
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="troca-venda.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar E-mail - SkinDeal</title>
+    <link rel="stylesheet" href="alteraremail.css">
+</head>
+
+<body> <!-- Header -->
+    <header class="header">
+        <div class="header-container"> <button class="back-btn" id="back-btn"> <svg class="back-icon" fill="none"
+                    viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg> <span>Voltar</span> </button> </div>
+    </header> <!-- Main Content -->
+    <main class="main-content">
+        <div class="form-container">
+            <h1 class="page-title">Alterar E-mail</h1>
+            <form class="email-form" id="email-form"> <!-- E-mail atual -->
+                <div class="input-wrapper">
+                    <div class="input-container"> <label class="input-label">E-mail atual</label> <input type="email"
+                            id="current-email" class="email-input" placeholder="email@dominio.com" required> </div>
+                </div> <!-- Novo e-mail -->
+                <div class="input-wrapper">
+                    <div class="input-container"> <label class="input-label">Novo e-mail</label> <input type="email"
+                            id="new-email" class="email-input" placeholder="email@dominio.com" required> </div>
+                </div> <!-- Confirmar e-mail -->
+                <div class="input-wrapper">
+                    <div class="input-container"> <label class="input-label">Confirmar e-mail</label> <input
+                            type="email" id="confirm-email" class="email-input" placeholder="email@dominio.com"
+                            required> </div>
+                </div> <!-- Submit Button --> <button type="submit" class="submit-btn" id="submit-btn"> Redefinir E-mail
+                </button>
+            </form>
+        </div>
+    </main>
+    <script src="alteraremail.js"></script>
+</body>
+
+</html>

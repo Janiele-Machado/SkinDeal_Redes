@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferência de Jogos - SkinDeal</title>
+    <link rel="stylesheet" href="preferenciajogos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <button class="back-btn" id="back-btn">
+                <svg class="back-icon" fill="none" viewBox="0 0 24 24">
+                    <path d="M15 18L9 12L15 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Voltar</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="preference-container">
+            <!-- Header Section -->
+            <div class="preference-header">
+                <h1 class="preference-title">Preferência de Jogos</h1>
+            </div>
+
+            <!-- Content Section -->
+            <div class="preference-content">
+                <!-- Title -->
+                <h2 class="content-title">Qual jogos deseja receber notificações</h2>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="search-input"
+                        placeholder="Buscar..."
+                    >
+                    <img 
+                        src="https://cdn-icons-png.flaticon.com/512/622/622669.png" 
+                        alt="Search" 
+                        class="search-icon"
+                    >
+                </div>
+
+                <!-- Games Grid -->
+                <div class="games-grid" id="games-grid">
+                    <!-- Counter-Strike 2 -->
+                    <div class="game-item" data-game="counter-strike-2">
+                        <img 
+                            src="https://cdn.cloudflare.steamstatic.com/apps/csgo/images/csgo_react/social/cs2.jpg" 
+                            alt="Counter-Strike 2" 
+                            class="game-icon"
+                        >
+                        <span class="game-name">Counter-Strike 2</span>
+                    </div>
+
+                    <!-- Rust -->
+                    <div class="game-item" data-game="rust">
+                        <img 
+                            src="https://cdn.akamai.steamstatic.com/steam/apps/252490/header.jpg" 
+                            alt="Rust" 
+                            class="game-icon"
+                        >
+                        <span class="game-name">Rust</span>
+                    </div>
+
+                    <!-- Dota 2 -->
+                    <div class="game-item" data-game="dota-2">
+                        <img 
+                            src="https://cdn.akamai.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_symbol.png" 
+                            alt="Dota 2" 
+                            class="game-icon"
+                        >
+                        <span class="game-name">Dota 2</span>
+                    </div>
+
+                    <!-- Team Fortress 2 -->
+                    <div class="game-item" data-game="team-fortress-2">
+                        <img 
+                            src="https://cdn.akamai.steamstatic.com/steam/apps/440/header.jpg" 
+                            alt="Team Fortress 2" 
+                            class="game-icon"
+                        >
+                        <span class="game-name">Team Fortress 2</span>
+                    </div>
+
+                    <!-- PUBG: Battlegrounds -->
+                    <div class="game-item" data-game="pubg">
+                        <img 
+                            src="https://cdn.akamai.steamstatic.com/steam/apps/578080/header.jpg" 
+                            alt="PUBG: Battlegrounds" 
+                            class="game-icon"
+                        >
+                        <span class="game-name">PUBG: Battlegrounds</span>
+                    </div>
+                </div>
+
+                <!-- Confirm Button -->
+                <button class="confirm-btn" id="confirm-btn">
+                    Confirmar
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="preferenciajogos.js"></script>
+</body>
+</html>

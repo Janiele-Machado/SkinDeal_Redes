@@ -1,0 +1,508 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    background: linear-gradient(
+        rgba(20, 28, 36, 0.173) 0%, 
+        rgba(30, 41, 51, 0.17) 0%, 
+        rgba(28, 28, 36, 0.11) 0%, 
+        rgba(24, 28, 36, 0.19) 0%, 
+        rgba(56, 103, 123, 0.2) 0%, 
+        rgba(24, 28, 36, 0.16) 70.673%, 
+        rgba(24, 28, 36, 0.19) 93.269%, 
+        rgba(40, 65, 79, 0.2) 100%
+    ), 
+    linear-gradient(90deg, rgb(20, 28, 36) 0%, rgb(20, 28, 36) 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 24px;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.back-icon {
+    width: 24px;
+    height: 24px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 48px 24px 286px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1079px;
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Page Title */
+.page-title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.16px;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: #6b6b6b;
+    border-radius: 7px;
+    padding: 32px;
+    height: 190px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.profile-image-wrapper {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.profile-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-name {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.profile-id,
+.profile-email,
+.profile-date {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: -0.13px;
+}
+
+.verified-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.verified-icon {
+    width: 30px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.verified-text {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 19.5px;
+    letter-spacing: -0.13px;
+}
+
+/* Options Grid */
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    height: 234px;
+}
+
+.options-column {
+    background-color: #6b6b6b;
+    border-radius: 7px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Option Items */
+.option-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    min-height: 56px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%;
+    text-align: left;
+}
+
+.option-item.total-earnings {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    min-height: 65px;
+    cursor: default;
+}
+
+.option-item.menu-option:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.option-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.option-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.option-text {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.earnings-value {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.arrow-icon {
+    width: 12px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.arrow-rotated {
+    transform: rotate(180deg);
+}
+
+.divider {
+    height: 0.5px;
+    background-color: #b5b5b5;
+    margin: 0 24px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 960px) {
+    .options-grid {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-info {
+        align-items: center;
+    }
+
+    .profile-card {
+        height: auto;
+    }
+
+    .verified-badge {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-content {
+        padding: 40px 16px 200px;
+    }
+
+    .container {
+        gap: 32px;
+    }
+
+    .page-title {
+        font-size: 20px;
+    }
+
+    .profile-card {
+        padding: 24px 16px;
+    }
+
+    .profile-image-wrapper {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+
+    .profile-id,
+    .profile-email,
+    .profile-date,
+    .verified-text {
+        font-size: 12px;
+    }
+
+    .option-text,
+    .earnings-value {
+        font-size: 14px;
+    }
+
+    .back-btn {
+        font-size: 18px;
+    }
+
+    .header {
+        height: 70px;
+    }
+}
+
+/* Modal Trocar Conta */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-trocar-content {
+    background-color: #525252;
+    border-radius: 40px;
+    width: 90%;
+    max-width: 393px;
+    padding: 63px 32px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    animation: scaleIn 0.3s ease;
+}
+
+/* Account Item */
+.modal-account-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    padding: 8px 0;
+}
+
+.modal-account-item:hover {
+    opacity: 0.8;
+}
+
+.modal-account-item.current-account {
+    cursor: default;
+}
+
+.modal-account-item.current-account:hover {
+    opacity: 1;
+}
+
+.modal-account-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.modal-account-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+}
+
+.modal-account-name {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: white;
+    margin: 0;
+}
+
+.modal-logado-badge {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #498ff9;
+    line-height: 1.5;
+}
+
+/* Modal Dividers */
+.modal-divider {
+    height: 2px;
+    background-color: #e6e6e6;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.modal-divider-vertical {
+    width: 0.5px;
+    height: 330px;
+    background-color: #b5b5b5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    bottom: -135px;
+}
+
+/* Add New Session */
+.modal-add-session {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.modal-add-session:hover {
+    opacity: 0.8;
+}
+
+.modal-add-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-left: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Modal Responsive */
+@media (max-width: 640px) {
+    .modal-trocar-content {
+        padding: 55px 24px 250px;
+    }
+
+    .modal-account-name {
+        font-size: 14px;
+    }
+
+    .modal-logado-badge {
+        font-size: 12px;
+    }
+
+    .modal-add-text {
+        font-size: 17px;
+    }
+
+    .modal-divider-vertical {
+        height: 280px;
+        bottom: -115px;
+    }
+}

@@ -1,0 +1,550 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Principal */
+.page-container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        rgba(20, 28, 36, 0.173) 0%, 
+        rgba(30, 41, 51, 0.17) 0%, 
+        rgba(28, 28, 36, 0.11) 0%, 
+        rgba(24, 28, 36, 0.19) 0%, 
+        rgba(56, 103, 123, 0.2) 0%, 
+        rgba(24, 28, 36, 0.16) 70.673%, 
+        rgba(24, 28, 36, 0.19) 93.269%, 
+        rgba(40, 65, 79, 0.2) 100%
+    ), 
+    linear-gradient(90deg, rgb(20, 28, 36) 0%, rgb(20, 28, 36) 100%);
+}
+
+/* Container de Login */
+.login-container {
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding-bottom: 8px;
+}
+
+.logo-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    letter-spacing: -0.24px;
+    line-height: 24px;
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+
+.form-header {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.form-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    line-height: 24px;
+}
+
+.form-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    line-height: 21px;
+    text-align: center;
+}
+
+/* Form */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 21px;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: black;
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: #999;
+}
+
+.error-message {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #ff4444;
+    display: none;
+}
+
+.error-message.active {
+    display: block;
+}
+
+/* Esqueceu a senha */
+.forgot-password-container {
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Links */
+.link-blue {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #498ff9;
+    text-decoration: none;
+    line-height: 21px;
+}
+
+.link-blue:hover {
+    text-decoration: underline;
+}
+
+/* Botões */
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    background: #10355b;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background: #154270;
+}
+
+.btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Divisor */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.divider-line {
+    flex: 1;
+    height: 1px;
+    background: #e6e6e6;
+}
+
+.divider-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fefefe;
+    line-height: 21px;
+}
+
+/* Botão Steam */
+.btn-steam {
+    width: 100%;
+    height: 40px;
+    background: #10355b;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    transition: background 0.3s;
+}
+
+.btn-steam:hover {
+    background: #154270;
+}
+
+.steam-icon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 35px;
+}
+
+/* Registre-se */
+.register-container {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.register-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fefefe;
+    line-height: 18px;
+}
+
+.register-text .link-blue {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* Home Container */
+.home-container {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 16px;
+}
+
+.home-content {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 48px;
+    text-align: center;
+}
+
+.home-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.home-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 32px;
+}
+
+.dashboard-card {
+    background: #10355b;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 16px;
+}
+
+.dashboard-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.dashboard-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+}
+
+/* Mensagem de Sucesso */
+.success-message {
+    background: #22c55e;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.success-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+}
+
+.success-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    margin-top: 8px;
+}
+
+/* Tela de Confirmação de Código */
+.confirmacao-header {
+    background: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.confirmacao-header-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.btn-voltar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.btn-voltar:hover {
+    opacity: 0.8;
+}
+
+.confirmacao-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 100px 20px 20px;
+}
+
+.confirmacao-card {
+    background: rgba(30, 41, 51, 0.3);
+    border: 0.909px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0px 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 48px;
+    width: 600px;
+    max-width: 100%;
+    position: relative;
+}
+
+.confirmacao-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+.confirmacao-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.code-inputs {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.code-input {
+    width: 64px;
+    height: 64px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 0.909px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.code-input:focus {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.link-reenviar {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #498ff9;
+    text-decoration: underline;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 24px;
+    padding: 8px;
+}
+
+.link-reenviar:hover {
+    opacity: 0.8;
+}
+
+.btn-confirmar {
+    width: 100%;
+    height: 48px;
+    background: #10355b;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 32px;
+}
+
+.btn-confirmar:hover:not(:disabled) {
+    background: #154270;
+}
+
+.btn-confirmar:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.ajuda-container {
+    text-align: center;
+}
+
+.ajuda-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+
+.ajuda-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 24px;
+}
+
+/* Responsivo */
+@media (max-width: 500px) {
+    .login-container {
+        width: 90%;
+        padding: 0 16px;
+    }
+    
+    .home-content {
+        padding: 24px;
+    }
+    
+    .home-title {
+        font-size: 32px;
+    }
+    
+    .confirmacao-card {
+        padding: 32px 24px;
+    }
+    
+    .confirmacao-title {
+        font-size: 18px;
+    }
+    
+    .code-inputs {
+        gap: 8px;
+    }
+    
+    .code-input {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+}
